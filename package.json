@@ -1,0 +1,30 @@
+{
+  "name": "@booster/collab-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "format": "echo \"Formatting is handled at the workspace level.\"",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
+    "@booster/collab-contracts": "workspace:*",
+    "@booster/database": "workspace:*",
+    "ioredis": "^5.7.0",
+    "next": "^16.1.6",
+    "next-auth": "5.0.0-beta.26",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "socket.io-client": "^4.8.1",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2"
+  }
+}
